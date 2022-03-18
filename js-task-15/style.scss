@@ -21,6 +21,7 @@ h2 {
    display: flex;
    grid-template-columns: repeat(3, 300px);
    gap: 30px;
+   flex-wrap: wrap;
 }
 
 .product-card{
