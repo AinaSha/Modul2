@@ -1,1 +1,0 @@
-const getproduct = new getData();

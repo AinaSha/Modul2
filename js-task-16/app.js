@@ -38,6 +38,44 @@ async function getData() {
       cardInner.append(descr);
       descr.innerText = product.desc;
       
+      const btnAll = document.querySelector('.btn-all');
+      const btnLaptop =document.querySelector('.btn-laptop');
+      const btnPhone =document.querySelector('.btn-smartph');
+      const btnTV =document.querySelector('.btn-tv');
+       
+
+      btnLaptop.addEventListener("click", () => {
+         if(product.category === "ноутбуки") {
+            card.style.display ="block";
+         }else {
+            card.style.display = "none";
+         }
+      })
+      
+      btnPhone.addEventListener('click', () => {
+         if(product.category === "смартфоны") {
+           card.style.display = "block";
+      }else {
+         card.style.display ="none";
+      }
+      })
+
+      btnTV.addEventListener('click', () => {
+         if(product.category === "телевизоры") {
+           card.style.display = "block";
+      }else {
+         card.style.display ="none";
+      }
+      })
+
+      btnAll.addEventListener('click', () => {
+         if(product.category === "") {
+           card.style.display = "none";
+      }else {
+         card.style.display ="block";
+      }
+      })
+      
    });
    
 }
