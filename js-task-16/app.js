@@ -37,6 +37,10 @@ async function getData() {
       cardInner.append(line);
       cardInner.append(descr);
       descr.innerText = product.desc;
+
+
+
+      
       
       const btnAll = document.querySelector('.btn-all');
       const btnLaptop =document.querySelector('.btn-laptop');
